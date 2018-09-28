@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Fri Sep 28 11:12:04 2018 as: nmap -sS -sV -A -p 0-65535 -oA nullbyte 192.168.19.128 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -A -p 0-65535 -oA nullbyte 192.168.19.128" start="1538147524" startstr="Fri Sep 28 11:12:04 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65536" services="0-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1538147525" endtime="1538147562"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.19.128" addrtype="ipv4"/>
+<address addr="00:0C:29:9B:F9:E4" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.10" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.10</cpe></service><script id="http-server-header" output="Apache/2.4.10 (Debian)"><elem>Apache/2.4.10 (Debian)</elem>
+</script><script id="http-title" output="Null Byte 00 - level 1"><elem key="title">Null Byte 00 - level 1</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version   port/proto  service&#xa;  100000  2,3,4        111/tcp  rpcbind&#xa;  100000  2,3,4        111/udp  rpcbind&#xa;  100024  1          36241/udp  status&#xa;  100024  1          37257/tcp  status&#xa;"><table key="100000">
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+<table key="100024">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">37257</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">36241</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="777"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="6.7p1 Debian 5" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 16:30:13:d9:d5:55:36:e8:1b:b7:d9:ba:55:2f:d7:44 (DSA)&#xa;  2048 29:aa:7d:2e:60:8b:a6:a1:c2:bd:7c:c8:bd:3c:f4:f2 (RSA)&#xa;  256 60:06:e3:64:8f:8a:6f:a7:74:5a:8b:3f:e1:24:93:96 (ECDSA)&#xa;  256 bc:f7:44:8d:79:6a:19:48:76:a3:e2:44:92:dc:13:a2 (ED25519)"><table>
+<elem key="fingerprint">163013d9d55536e81bb7d9ba552fd744</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBALLUIu4tXFadebYrnD994oq52RRYSpBO4UBHiXnGTGEgm6UlIDR8IT81T9RaJg5DjFIfjfzTfeIJVmDKMk2Zz/itniXKB7FRbF5Exyp4Vu2IzD76Iepu1qBmGrQdgtAwR+rCtu4KQ30KtCK48OvZO409Nbff8AB5ScuHePourSMVAAAAFQDbcAuY6E2l8runB/XMCs4kevsorQAAAIBlurtYJXxZFPdyfnVzCvGlp74pknTmM7BExEyU5tdJAGjPPF3+ApdNXk9b8cWKoKsGK++cEQgkZAuIgj9uso853WwS4NArT/P0j9cmqvKmMmClZWMFf/pXARoW9MsyZ9Eudo2TWBEgtqknVqStsSAp5UaxITyFCGoISaAJSpXtawAAAIEAnGErIK3lL2HxBvKbVJYpKdY9jjlsd+Ly8iPJW5m2BUXRDPVMU4kN5yhXfcK9Ls4W/SWApzj7zt5c5j3KixB8+pjpIMZqqnHbDcHbL1o+gPbwaSzeZVrHxnmCay3eWadclIykRadr3wdsnCa+6wSGEAW/1VbODQ4g84jRVj3iHCo=</elem>
+<elem key="bits">1024.0</elem>
+</table>
+<table>
+<elem key="fingerprint">29aa7d2e608ba6a1c2bd7cc8bd3cf4f2</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCk720eL8a5T2a7mSbBQm1Ga6mDBH354s4kS4YPzJdZDgpdsRpqyZtrYr09HxkOpdk2Qt5yVo8Wq0UCqGmcqSd5u8Zx36OjUp3gwKhyQD8HXfhr3Edp65wt3PY7jlEKyXrGiJPQWYCOJAxfRW+VzBM13EKRWjS+jlovyjz0/BJpdX/cehGTyg/YkOT98g2oiDZm8ydGmFHa1psATUf2/39NVA6ef6eL+WtrYRljiV7Bu4qrX+WU2DLCZy28SjA23m48I+Thy05pLZTgEYGeBAH6UbC+96DUyrSqbAF0I+OBPXNclrmSB956VdDOBe6RjSJsrO9bXUQbb5oT2XnjdTTB</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<table>
+<elem key="fingerprint">6006e3648f8a6fa7745a8b3fe1249396</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAkdg5B2LQmX+0vhiEavzVhKN0ZaU1e1Zi1ANcCmz5W63z65sBL6iRvzF+XNCW3dmsvsC1lRlLYDpj94RElY3ag=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">bcf7448d796a194876a3e24492dc13a2</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINxwJ5299oAQPJtmnso4wAqIdz2ACkCMWsvxgf16XX/G</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="37257"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="35891"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="25" lastboot="Fri Sep 28 11:12:17 2018"/>
+<distance value="1"/>
+<tcpsequence index="256" difficulty="Good luck!" values="72FDA597,93E0B9B8,48EC7526,2D439B46,DC2F2A36,218D6981"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="1712,172B,1745,175E,1777,1790"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.19.128" rtt="1.16"/>
+</trace>
+<times srtt="1164" rttvar="628" to="100000"/>
+</host>
+<runstats><finished time="1538147562" timestr="Fri Sep 28 11:12:42 2018" elapsed="37.82" summary="Nmap done at Fri Sep 28 11:12:42 2018; 1 IP address (1 host up) scanned in 37.82 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
